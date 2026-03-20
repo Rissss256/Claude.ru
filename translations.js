@@ -1,8 +1,9 @@
 // Словарь переводов Claude.ai → Русский
-// Репозиторий: https://github.com/Rissss256/claude-ru
-// Редактируйте этот файл чтобы добавить новые переводы
+// https://github.com/Rissss256/Claude.ru
+// v6 — Customize, Artifacts полный перевод + фикс сайдбара
 
 const T = {
+  // === НАВИГАЦИЯ ===
   "New chat": "Новый чат", "New Chat": "Новый чат",
   "Search": "Поиск", "Search chats": "Поиск по чатам",
   "Search chats and projects": "Поиск по чатам и проектам",
@@ -17,6 +18,8 @@ const T = {
   "Last Week": "На прошлой неделе", "This Month": "В этом месяце",
   "Toggle sidebar": "Свернуть панель",
   "Free plan": "Бесплатный план", "Pro plan": "Pro план",
+
+  // === ПОЛЕ ВВОДА ===
   "Reply...": "Написать...", "Reply": "Ответить",
   "How can Claude help you today?": "Чем могу помочь?",
   "Reply to Claude...": "Написать Клоду...",
@@ -24,13 +27,19 @@ const T = {
   "Talk with Claude": "Написать Клоду",
   "Add files, connectors, and more": "Добавить файлы, коннекторы и другое",
   "Add files, connectors, and more /": "Добавить файлы, коннекторы и другое",
+
+  // === КНОПКИ ЧАТА ===
   "Send": "Отправить", "Send message": "Отправить",
   "Stop": "Остановить", "Retry": "Повторить",
   "Edit": "Редактировать", "Copy": "Копировать",
   "Copied!": "Скопировано!",
   "Good response": "Хороший ответ", "Bad response": "Плохой ответ",
+
+  // === ШАПКА ===
   "Share": "Поделиться", "Upgrade": "Улучшить",
   "Upgrade plan": "Улучшить план", "More options": "Ещё",
+
+  // === ПОДЕЛИТЬСЯ ===
   "Share chat": "Поделиться чатом",
   "Only messages up to this point will be shared.": "Будут доступны только сообщения до этой точки.",
   "Keep private": "Оставить приватным",
@@ -42,10 +51,14 @@ const T = {
   "Link copied!": "Ссылка скопирована!",
   "Usage Policy": "Политику использования",
   "Delete link": "Удалить ссылку",
+
+  // === СТРАНИЦА ЧАТОВ ===
   "Your chats with Claude": "Ваши чаты с Клодом",
   "Search your chats...": "Поиск по чатам...",
   "Select": "Выбрать", "No chats yet": "Чатов пока нет",
   "just now": "только что",
+
+  // === СТРАНИЦА ПРОЕКТОВ ===
   "Search projects...": "Поиск по проектам...",
   "Sort by": "Сортировка:", "Activity": "Активность",
   "Looking to start a project?": "Хотите создать проект?",
@@ -60,12 +73,24 @@ const T = {
   "Knowledge": "База знаний", "Members": "Участники",
   "Add members": "Добавить участников",
   "Remove from project": "Удалить из проекта",
-  "Move to project": "В проект", "Leave project": "Покинуть проект",
-  "Delete project": "Удалить проект", "Edit project": "Редактировать проект",
+  "Move to project": "В проект",
+  "Leave project": "Покинуть проект",
+  "Delete project": "Удалить проект",
+  "Edit project": "Редактировать проект",
   "Project settings": "Настройки проекта",
+
+  // === СТРАНИЦА АРТЕФАКТОВ ===
+  "New artifact": "Новый артефакт",
   "Your artifacts": "Ваши артефакты",
   "Search your artifacts...": "Поиск по артефактам...",
   "No artifacts yet": "Артефактов пока нет",
+  "Inspiration": "Вдохновение",
+  "Your Artifacts": "Ваши артефакты",
+  "Learn something": "Узнать что-то новое",
+  "Life hacks": "Лайфхаки",
+  "Play a game": "Поиграть",
+  "Be creative": "Проявить творчество",
+  "Touch grass": "Отдохнуть",
   "All": "Все", "Code": "Код", "Documents": "Документы",
   "Images": "Изображения", "Other": "Другое",
   "Preview": "Предпросмотр", "Run": "Запустить",
@@ -77,12 +102,90 @@ const T = {
   "Edit artifact": "Редактировать артефакт",
   "Delete artifact": "Удалить артефакт",
   "View source": "Посмотреть код",
-  "Save to artifacts": "Сохранить в артефакты", "Remix": "Переработать",
+  "Save to artifacts": "Сохранить в артефакты",
+  "Remix": "Переработать",
+  // Названия встроенных артефактов
+  "Writing editor": "Редактор текста",
+  "PRD To Prototype": "PRD в прототип",
+  "Slack Project Insights": "Аналитика Slack-проекта",
+  "Raw Note Transformer": "Преобразователь заметок",
+  "Brainstorm Idea Generator": "Генератор идей",
+  "Flashcards": "Карточки для учёбы",
+  "Anthropic office simulator": "Симулятор офиса Anthropic",
+  "CodeVerter": "CodeVerter",
+  "PyLingo": "PyLingo",
+  "Molecule studio": "Молекулярная студия",
+  "QR code generator": "Генератор QR-кодов",
+  "AI platformer game": "Платформер с ИИ",
+  "Attachment style quiz": "Тест стиля привязанности",
+  "Your life in weeks": "Твоя жизнь в неделях",
+  "Historical SVG amphitheater": "Исторический амфитеатр",
+  "Email writing assistant": "Помощник по написанию писем",
+  "Bedtime story generator": "Генератор сказок на ночь",
+  "Language learning tutor": "Репетитор по языкам",
+  "Forest explorer": "Исследователь леса",
+  "Slime soccer": "Слайм-футбол",
+  "Origin stories": "Истории происхождения",
+  "Trivia": "Викторина",
+  "Meeting notes summary": "Конспект встречи",
+  "Interactive drum machine": "Интерактивная драм-машина",
+  "Join dots": "Соедини точки",
+  "AI rhyming clock": "Рифмующиеся часы",
+  "One-pager PRD maker": "Создатель PRD на одну страницу",
+  "My weekly chronicle": "Мой еженедельник",
+  "5 whys": "5 почему",
+  "3 truths and a hallucination": "3 правды и галлюцинация",
+  "How petty are you?": "Насколько вы мелочны?",
+  "Magic in the grass": "Магия в траве",
+  "Team activity ideas": "Идеи для команды",
+  "Mood canvas": "Холст настроения",
+  "Dream interpreter": "Толкователь снов",
+  "Where's the sloth?": "Где ленивец?",
+  "Emoji charades": "Эмодзи-шарады",
+  "Idea spark": "Искра идей",
+  "Synesthesia symphony": "Симфония синестезии",
+  "Sakura serenity": "Умиротворение сакуры",
+  "Draw a perfect circle": "Нарисуй идеальный круг",
+  "Stories in the sky": "Истории на небе",
+  "Better than very": "Лучше чем 'очень'",
+  "Word cloud maker": "Создатель облака слов",
+  "Project dashboard generator": "Генератор дашборда",
+  "Piano": "Пианино",
+  "The Way of Code 03": "Путь кода 03",
+  "The Way of Code 24": "Путь кода 24",
+  "The Way of Code 35": "Путь кода 35",
+  "Coding Coach": "Тренер по коду",
+  "CSV Data Visualizer": "Визуализатор CSV",
+  "Measured Words": "Взвешенные слова",
+  "Color contrast checker": "Проверка контраста цветов",
+  "Mood palette": "Палитра настроения",
+  "Team popcorn": "Командный попкорн",
+
+  // === CUSTOMIZE (Настроить) ===
   "Customize Claude": "Настроить Клода",
+  "Skills": "Навыки",
+  "Connectors": "Коннекторы",
+  "Connect your apps": "Подключить приложения",
+  "Let Claude read and write to the tools you already use.": "Дайте Клоду доступ к инструментам которые вы используете.",
+  "Create new skills": "Создать новые навыки",
+  "Teach Claude your processes, team norms, and expertise.": "Обучите Клода вашим процессам, нормам команды и экспертизе.",
+  "Skills, connectors, and plugins shape how Claude works with you.": "Навыки, коннекторы и плагины определяют как Клод работает с вами.",
+  "Add a skill": "Добавить навык",
+  "No skills yet": "Навыков пока нет",
+  "Add a connector": "Добавить коннектор",
+  "No connectors yet": "Коннекторов пока нет",
+  "Browse connectors": "Найти коннекторы",
+  "Available connectors": "Доступные коннекторы",
+  "Connected": "Подключено",
+  "Connect": "Подключить",
+  "Disconnect": "Отключить",
+  "Configure": "Настроить",
+  "Permissions": "Разрешения",
   "Custom instructions": "Пользовательские инструкции",
   "What would you like Claude to know about you?": "Что Клод должен знать о вас?",
   "How would you like Claude to respond?": "Как Клод должен отвечать?",
-  "User preferences": "Личные настройки", "Preferences": "Предпочтения",
+  "User preferences": "Личные настройки",
+  "Preferences": "Предпочтения",
   "Writing style": "Стиль написания",
   "Concise": "Кратко", "Detailed": "Подробно",
   "Formal": "Формально", "Casual": "Неформально",
@@ -91,32 +194,42 @@ const T = {
   "characters remaining": "символов осталось",
   "Save preferences": "Сохранить настройки",
   "Reset to defaults": "Сбросить до стандартных",
+
+  // === ПАМЯТЬ ===
   "Claude's memory": "Память Клода",
   "Manage memory": "Управление памятью",
   "Clear memory": "Очистить память",
   "No memories yet": "Воспоминаний пока нет",
   "Delete memory": "Удалить воспоминание",
+  "Memory": "Память",
+
+  // === CLAUDE CODE ===
   "Install Claude Code": "Установить Claude Code",
   "Run Claude Code in your terminal": "Запустите Claude Code в терминале",
   "Install": "Установить", "Documentation": "Документация",
   "Copy command": "Скопировать команду",
   "Get started": "Начать", "Learn more": "Подробнее",
+
+  // === КОНТЕКСТНОЕ МЕНЮ ===
   "Rename": "Переименовать", "Delete": "Удалить",
   "Delete chat": "Удалить чат", "Archive": "В архив",
   "Unarchive": "Из архива",
   "Star": "В избранное", "Unstar": "Убрать из избранного",
   "Export chat": "Экспортировать",
+
+  // === ПРОФИЛЬ / МЕНЮ ===
   "Profile & Settings": "Профиль и настройки",
   "Settings": "Настройки", "Log out": "Выйти",
   "Sign out": "Выйти", "What's new": "Что нового",
   "Help & support": "Помощь", "Give feedback": "Отзыв",
   "Keyboard shortcuts": "Горячие клавиши",
+
+  // === НАСТРОЙКИ ===
   "Appearance": "Внешний вид", "Theme": "Тема",
   "Light": "Светлая", "Dark": "Тёмная", "System": "Системная",
   "Notifications": "Уведомления", "Privacy": "Конфиденциальность",
-  "Memory": "Память", "Save": "Сохранить",
-  "Save changes": "Сохранить", "Cancel": "Отмена",
-  "Close": "Закрыть", "Confirm": "Подтвердить",
+  "Save": "Сохранить", "Save changes": "Сохранить",
+  "Cancel": "Отмена", "Close": "Закрыть", "Confirm": "Подтвердить",
   "Billing": "Оплата", "Usage": "Использование",
   "Account": "Аккаунт", "Profile": "Профиль",
   "Security": "Безопасность",
@@ -129,18 +242,24 @@ const T = {
   "Tools": "Инструменты", "Add": "Добавить",
   "Remove": "Удалить", "Add content": "Добавить контент",
   "Attach files": "Прикрепить файлы",
+
+  // === ДИАЛОГИ ===
   "Are you sure?": "Вы уверены?",
   "This action cannot be undone.": "Это нельзя отменить.",
   "Delete anyway": "Удалить", "Got it": "Понятно",
   "OK": "ОК", "Yes": "Да", "No": "Нет", "Try again": "Повторить",
   "Show more": "Показать больше", "Show less": "Скрыть",
   "Load more": "Загрузить ещё",
+
+  // === СТАТУСЫ ===
   "Thinking...": "Думаю...", "Loading...": "Загрузка...",
   "Generating...": "Генерирую...",
   "Claude is AI and can make mistakes. Please double-check responses.":
     "Клод — ИИ и может ошибаться. Проверяйте ответы.",
   "Claude can make mistakes. Please double-check responses.":
     "Клод может ошибаться. Проверяйте ответы.",
+
+  // === РАЗНОЕ ===
   "Select all": "Выбрать все", "Deselect all": "Снять все",
   "Delete selected": "Удалить выбранные",
   "Back": "Назад", "Next": "Далее", "Done": "Готово",
